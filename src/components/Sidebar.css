@@ -1,0 +1,92 @@
+/* Sidebar container */
+.sidebar {
+  width: 250px;
+  background-color: #f0f4ff; /* Light background for sidebar */
+  padding: 8px; /* Further reduced padding */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar heading */
+.sidebar h2 {
+  color: #010306; /* Dark text color */
+  font-size: 20px; /* Slightly smaller font size */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Further reduced space below the heading */
+}
+
+/* Sidebar menu */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 3px; /* Further reduced margin at the top */
+}
+
+/* Sidebar menu items */
+.sidebar li {
+  margin: 6px 0; /* Further reduced space between list items */
+  cursor: pointer;
+}
+
+/* Sidebar links */
+.sidebar li a {
+  display: flex;
+  align-items: center;
+  color: black; /* Black text color */
+  text-decoration: none;
+  font-size: 14px; /* Further reduced font size */
+  font-weight: bold; /* Bold text */
+  padding: 4px 8px; /* Further reduced padding */
+  border-radius: 5px;
+  background-color: white; /* White background for links */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Change background color on hover */
+.sidebar li a:hover {
+  background-color: #3498db; /* Light blue background on hover */
+  color: white; /* White text on hover */
+}
+
+/* Sidebar icons */
+.sidebar li a svg {
+  margin-right: 6px; /* Further reduced space between icon and text */
+}
+
+/* Ensure the sidebar is responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Reduce sidebar width on smaller screens */
+    padding: 6px; /* Further reduced padding */
+  }
+
+  .sidebar h2 {
+    font-size: 18px; /* Adjust font size for the logo */
+    margin-bottom: 4px; /* Further reduced space below the heading */
+  }
+
+  .sidebar li a {
+    font-size: 12px; /* Further reduced font size for links */
+    padding: 3px 6px; /* Further reduced padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%; /* Sidebar takes full width on very small screens */
+    height: auto;
+  }
+
+  .sidebar h2 {
+    font-size: 16px; /* Adjust logo size */
+    margin-bottom: 3px; /* Further reduced space below the heading */
+  }
+
+  .sidebar li a {
+    font-size: 10px; /* Further reduced font size for links */
+    padding: 2px 4px; /* Further reduced padding */
+  }
+}

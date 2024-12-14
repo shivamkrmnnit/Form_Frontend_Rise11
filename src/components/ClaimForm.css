@@ -1,0 +1,260 @@
+/* ClaimForm.css */
+
+/* General Styles */
+.main-content {
+  flex: 1 1;
+  padding: 1px;
+}
+.claim-form {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.claim-form h2 {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.blue-line {
+  width: 100%;
+  height: 2px;
+  background-color: #3b7ed7; /* Green line */
+  margin-bottom: 20px;
+}
+
+.fields-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.field {
+  flex: 1;
+  margin-right: 20px;
+  min-width: 280px; /* Minimum width for each field */
+}
+
+.claim-value-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.place-question {
+  margin-top: 10px;
+}
+
+.radio-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.radio-buttons label {
+  font-weight: normal;
+}
+
+.inline-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* File Upload Container */
+.file-upload-container {
+  width: 200px;
+  height: 250px;
+  border: 2px dashed #4a90e2;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.file-upload-container:hover {
+  border-color: #007bff;
+  background-color: #f1f8ff;
+}
+
+.file-upload-container input[type="file"] {
+  display: none;
+}
+
+.file-upload-icon {
+  font-size: 40px;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.file-upload-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.file-upload-subtext {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Add spacing between the claim value and statement fields */
+.claim-value-container,
+.inline-fields {
+  margin-bottom: 20px;
+}
+
+.language-question {
+  margin-top: 10px;
+}
+
+.black-line {
+  height: 1px;
+  background-color: rgba(45, 45, 45, 0.164);
+  margin: 0px 0;
+  margin-top: 0px;
+}
+
+.inline-upload-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.inline-upload-cards .upload-card {
+  flex: 1;
+  min-width: 200px;
+}
+
+.statement-text {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  /* color: #181717ac; */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .fields-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .field {
+    margin-right: 0;
+  }
+
+  .claim-value-container, .inline-fields {
+    margin-bottom: 10px;
+}
+
+.inline-fields {
+  display: flex
+;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+  .inline-upload-cards {
+    flex-direction: column;
+  }
+
+  .inline-upload-cards .upload-card {
+    width: 100%;
+  }
+
+  .file-upload-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .claim-value-container {
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .claim-form {
+    padding: 15px;
+  }
+
+  .fields-container,
+  .inline-fields {
+    gap: 10px;
+  }
+
+  .field {
+    margin-right: 0;
+  }
+
+  .claim-value-container {
+    gap: 10px;
+  }
+
+  button {
+    padding: 12px;
+  }
+}
+.sidebar {
+  width: 248px;
+  background-color: #ffffff;
+  padding: 4px;
+  height: 97vh;
+  display: flex
+;
+  flex-direction: column;
+}
+.header {
+  background-color: #f4f6fc;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex
+;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
