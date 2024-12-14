@@ -1,70 +1,179 @@
-# Getting Started with Create React App
+## Claim Form Application
+ LIVE - https://form-frontend-rise11.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Claim Form Application is a web-based tool designed to allow users to file claims efficiently and securely. It features a user-friendly interface for inputting claim details, selecting relevant options, and uploading necessary documents.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Claim Value Input**: Users can enter the contract and claim values with currency selection.
+- **Place Selection**: Users can select a valid city in India for claim proceedings.
+- **Language Selection**: Users can choose the language for claim proceedings.
+- **File Uploads**: Users can upload statements, agreements, and additional documentation.
+- **Validation**: Ensures all required fields are filled before submission.
+- **Dynamic File Uploads**: Allows adding multiple files for additional documentation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React.js
+- **Icons**: FontAwesome
+- **Styling**: CSS
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Ensure you have the following installed:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v14 or higher)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Steps
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+```
+git clone https://github.com/shivamkrmnnit/Form_Frontend_Rise11.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Navigate to the project directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+cd Rise11
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm install
+```
 
-## Learn More
+4. Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Open your browser and go to:
 
-### Code Splitting
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Usage
 
-### Analyzing the Bundle Size
+1. Fill Out the Form: Enter the required details in the provided fields.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Select Options: Choose the appropriate city and language from the dropdown menus.
 
-### Making a Progressive Web App
+3. Upload Files: Add necessary files like statements and agreements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Submit: Ensure all fields are valid, then click the Submit button.
 
-### Advanced Configuration
+# Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+claim-form/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── ClaimForm.js   # Main component for the claim form
+│   │   ├── ClaimForm.css  # Styling for the claim form
+│   ├── App.js             # Root component
+│   ├── index.js           # Entry point
+├── package.json           # Dependencies and scripts
+├── README.md              # Project documentation
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```      
 
-### `npm run build` fails to minify
+# Validation Logic
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Contract Value: Ensures the input is not empty.
+
+2. Claim Value: Checks the input is not empty.
+
+3. Place Selection: Validates the selected city is from the predefined list of Indian cities.
+
+4. Language Selection: Ensures the selected language is from the predefined list of valid languages.
+
+5. File Uploads: Requires at least one file to be uploaded for each mandatory section.
+
+# Future Enhancements
+
+1. Add backend integration for form submission.
+
+2. Implement multi-language support for the UI.
+
+3. Add a progress tracker for claim processing.
+
+4. Enhance validation with regex for numerical inputs.
+
+
+
+## Responsive Design (Desktop, Tablet, Mobile)
+The dashboard has been built with responsiveness in mind, ensuring a smooth experience across different screen sizes.
+
+- Desktop View: The layout adjusts to use larger screens effectively, with form fields and file upload sections arranged for easy navigation.
+ ![Screenshot 2024-12-14 165809](https://github.com/user-attachments/assets/d0d311ea-6b85-4d3d-9684-c828eab00e58)
+
+- Tablet View: The layout adjusts to a smaller screen, with elements stacking vertically for better accessibility and usability.
+  ![Screenshot 2024-12-14 165939](https://github.com/user-attachments/assets/e46d7952-0a3f-4668-89ac-8161cf62bb9e)
+ - iPad pro
+- Mobile View: The design is optimized for mobile, with touch-friendly elements, stacked form fields, and file upload buttons.
+![Screenshot 2024-12-14 170021](https://github.com/user-attachments/assets/031f0b69-4da1-4680-a949-881ca9230c59)
+- iPhone 12 pro
+# Responsive Approach
+- Media Queries: Used CSS media queries to ensure the layout adapts to different screen sizes.
+- Flexbox and Grid Layouts: Used Flexbox for alignment and Grid for complex layouts to ensure elements resize and reposition correctly.
+- Viewport Units: Used viewport width (vw) and height (vh) for fluid scaling across devices.
+# Approach to Building the Dashboard
+The dashboard was built with React.js to leverage its component-based structure, making it easy to maintain and scale. CSS media queries were used to make the layout responsive across desktop, tablet, and mobile views. The application uses controlled components for form inputs, ensuring real-time validation and updates.
+
+# Challenges Faced and Solutions
+1. Responsive Design: Ensuring that the layout works seamlessly across all devices was a challenge. I used CSS media queries to adjust the layout and element sizes dynamically based on the screen width.
+
+- Solution: Implemented a mobile-first approach, starting with a mobile layout and progressively enhancing it for tablet and desktop views using media queries.
+2. File Uploads: Handling file uploads on different devices, especially mobile, posed some challenges with UI responsiveness and file size limitations.
+
+- Solution: Added a dynamic file upload feature with clear instructions and progress indicators, ensuring compatibility with various devices and browsers.
+3. Form Validation: Ensuring all fields are validated before submission, especially when dealing with dynamic content like file uploads, required careful planning.
+
+- Solution: Built custom validation logic for each field and ensured that users are alerted if any field is incomplete or invalid before submission.
+  
+# Assumptions Made
+- The user will have a stable internet connection for uploading files.
+- The form fields will be filled in the correct format (e.g., currency values in proper format, city names from the list).
+- The application will primarily be used on modern browsers that support CSS Grid and Flexbox.
+
+# Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature/bugfix:
+```
+git checkout -b feature-name
+```
+3. Commit your changes:
+```
+git commit -m "Add new feature"
+```
+4. Push to your branch:
+```
+git push origin feature-name
+```
+5. Create a pull request.
+
+
+
+# Contact
+
+For any questions or suggestions, feel free to reach out:
+
+Email: shivamkrmnnit@gmail.com
+
+[@ShivamKumar](https://github.com/shivamkrmnnit)
+
